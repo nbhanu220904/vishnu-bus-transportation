@@ -1,6 +1,6 @@
 "use client";
 import { navLinks } from "@/constant/Constant";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
@@ -31,17 +31,11 @@ const Nav = ({ openNav }: Props) => {
         navBg ? "bg-white shadow-md" : "fixed"
       } w-full transition-all duration-200 h-[12vh] z-[1000]`}
     >
-      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex items-center h-full justify-between w-[100%] xl:w-[80%] mx-auto">
         {/* Logo */}
         {/* <Image src="/logo2.png" alt="logo" width={200} height={200} priority /> */}
+        <Image src={"/logo.png"} alt="logo" width={70} height={70} />
         <h1 className="text-2xl md:text-xl font-bold flex flex-col items-center">
-          {/* <Image
-            src="/logo2.png"
-            alt="logo"
-            width={200}
-            height={200}
-            priority
-          /> */}
           <span className="text-4xl md:text-5xl lg:text-6xl text-blue-600">
             Vishnu
           </span>
