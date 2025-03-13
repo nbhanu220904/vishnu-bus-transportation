@@ -34,7 +34,7 @@ export default function RootLayout({
       <GoogleOneTap />
       <html lang="en">
         <head>
-          <link rel="icon" href="/logo.jpeg" type="image/png" />
+          <link rel="icon" href="/logo1.png" type="image/png" />
         </head>
         <body className={`${font.className} antialiased`}>
           {/* <ResponsiveNav /> */}

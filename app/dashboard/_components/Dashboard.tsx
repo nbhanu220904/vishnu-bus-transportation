@@ -24,10 +24,11 @@ const Dashboard = () => {
             Explore Routes
           </Button>
         </Link> */}
+        
       </div>
 
       {/* Additional Dashboard Data */}
-      <div className="flex flex-col justify-center items-center mt-20">
+      {/* <div className="flex flex-col justify-center items-center mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           <div className="p-5 bg-white shadow-md rounded-lg">
             <h2 className="text-lg font-semibold">
@@ -75,7 +76,7 @@ const Dashboard = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
