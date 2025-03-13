@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 // import { Progress } from "@/components/ui/progress";
 import {
+  HiMiniCreditCard,
   HiOutlineAdjustmentsHorizontal,
   HiOutlineHome,
   HiOutlineHomeModern,
@@ -11,6 +12,7 @@ import {
   HiOutlineServerStack,
   HiOutlineShieldCheck,
   HiOutlineSquare3Stack3D,
+  HiUserCircle,
   HiUserGroup,
 } from "react-icons/hi2";
 import { usePathname } from "next/navigation";
@@ -27,30 +29,42 @@ const SideBar = () => {
     },
     {
       id: 2,
+      name: "Profile",
+      icon: <HiUserCircle />,
+      path: "/dashboard/profile",
+    },
+    {
+      id: 2,
       name: "Explore Routes",
       icon: <HiOutlineServerStack />,
       path: "/dashboard/explore",
     },
     {
       id: 3,
+      name: "Fee Details",
+      icon: <HiMiniCreditCard />,
+      path: "/dashboard/fee-details",
+    },
+    {
+      id: 4,
       name: "Features",
       icon: <HiOutlineShieldCheck />,
       path: "/dashboard/features",
     },
     {
-      id: 4,
+      id: 5,
       name: "Select Seat",
       icon: <HiOutlineAdjustmentsHorizontal />,
       path: "/dashboard/select-seat",
     },
     {
-      id: 5,
+      id: 6,
       name: "About Us",
       icon: <HiUserGroup />,
       path: "/dashboard/about-us",
     },
     {
-      id: 6,
+      id: 7,
       name: "Contact Us",
       icon: <HiOutlinePower />,
       path: "/dashboard/contact-us",
@@ -74,14 +88,14 @@ const SideBar = () => {
         </span>
         Bus Transpotation
       </h1>
-      <hr className="my-5" />
+      <hr className="my-6" />
       <ul className="text-lg">
         {Menu.map((item) => (
           <li key={item.id}>
             <Link
               href={item.path}
-              className={`flex items-center gap-5 text-gray-600 p-3 mt-7 cursor-pointer hover:bg-blue-50 hover:text-blue-800 rounded-lg ${
-                item.path == path && "bg-blue-100 text-black"
+              className={`flex items-center gap-5 text-gray-600 p-3 mt-4 cursor-pointer hover:bg-blue-50 hover:text-blue-800 rounded-lg ${
+                item.path == path && "bg-blue-600 text-white"
               }`}
             >
               <div className="text-2xl">{item.icon}</div>
@@ -92,7 +106,7 @@ const SideBar = () => {
       </ul>
 
       {/* Progress Component */}
-      <div className="absolute bottom-10 w-[80%]">
+      <div className="absolute bottom-5 w-[80%]">
         <hr className="my-5" />
         <div className="flex justify-between">
           <UserButton />

@@ -1,6 +1,7 @@
 "use client";
 // import { Button } from "@/components/ui/button";
 import { useUser } from "@clerk/nextjs";
+import Image from "next/image";
 // import Link from "next/link";
 import React from "react";
 
@@ -24,59 +25,40 @@ const Dashboard = () => {
             Explore Routes
           </Button>
         </Link> */}
-        
       </div>
-
-      {/* Additional Dashboard Data */}
-      {/* <div className="flex flex-col justify-center items-center mt-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          <div className="p-5 bg-white shadow-md rounded-lg">
-            <h2 className="text-lg font-semibold">
-              📅 Book & Manage Your Trips
-            </h2>
-            <p className="text-gray-500">
-              Reserve your seat and modify bookings anytime.
-            </p>
-          </div>
-
-          <div className="p-4 bg-white shadow-md rounded-lg">
-            <h2 className="text-lg font-semibold">📍 Real-Time Bus Tracking</h2>
-            <p className="text-gray-500">
-              Stay updated with live bus locations and arrival times.
-            </p>
-          </div>
-
-          <div className="p-4 bg-white shadow-md rounded-lg">
-            <h2 className="text-lg font-semibold">💳 Secure Payments</h2>
-            <p className="text-gray-500">
-              Easily complete transactions and view payment history.
-            </p>
-          </div>
-
-          <div className="p-5 bg-white shadow-md rounded-lg">
-            <h2 className="text-lg font-semibold">🎫 QR Code</h2>
-            <p className="text-gray-500">
-              Instantly generate a unique QR code after selecting your seat for
-              easy access.
-            </p>
-          </div>
-
-          <div className="p-4 bg-white shadow-md rounded-lg">
-            <h2 className="text-lg font-semibold">🔔 Instant Notifications</h2>
-            <p className="text-gray-500">
-              Get alerts for bus schedules, route changes, and updates.
-            </p>
-          </div>
-
-          <div className="p-4 bg-white shadow-md rounded-lg">
-            <h2 className="text-lg font-semibold">🛠 24/7 Support</h2>
-            <p className="text-gray-500">
-              Reach out for assistance anytime for a smooth commuting
-              experience.
-            </p>
-          </div>
+      <div className="flex justify-between items-center mt-10">
+        {/* Heading and Description */}
+        <div>
+          <h1
+            data-aos="fade-up"
+            className="text-2xl sm:text-4xl md:text-6xl mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]"
+          >
+            Welcome to Vishnu Bus Transportation
+          </h1>
+          {/* Description */}
+          <p className="text-gray-700">
+            At VITB, we are dedicated to providing students and faculty with a
+            seamless and efficient transportation experience. Our well-managed
+            bus service ensures that your commute to and from campus is safe,
+            comfortable, and reliable.
+            {/* Stay ahead in the ever-evolving tech landscape by exploring the
+              latest technologies and industry trends. Our expertly curated free
+              and premium courses are designed to equip you with in-demand
+              skills, enhance your problem-solving abilities, and accelerate
+              your career growth. Whether you're a beginner or an experienced
+              professional, our platform provides the perfect environment to
+              learn, innovate, and succeed in the world of software development. */}
+          </p>
         </div>
-      </div> */}
+        {/* Home Page Image */}
+        <Image
+          className="rounded-2xl"
+          src={"/vishnucollege.jpg"}
+          alt="vishnu college"
+          width={500}
+          height={300}
+        />
+      </div>
     </div>
   );
 };
